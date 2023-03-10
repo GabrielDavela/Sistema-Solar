@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(34, 63, 89);
+    background: radial-gradient(circle, rgba(34, 63, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planeta{
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+}
+
+#sol {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+}
+
+#sol > img {
+    width: inherit;
+    height: inherit;
+}
+
+#mercurio {
+    width: 5.5rem;
+    height: 5.5rem;
+    animation: spin 3s infinite linear;
+}
+
+#mercurio > img {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    
+}
+
+#venus {
+    width: 7.8rem;
+    height: 7.8rem;
+    animation: spin 6s infinite linear;
+}
+
+#venus > img {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+}
+
+#terra {
+    width: 11rem;
+    height: 11rem;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    animation: spin 8s infinite linear;
+}
+
+#terra > img {
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+}
+
+#marte {
+    width: 14rem;
+    height: 14rem;
+    animation: spin 11s infinite linear;
+}
+
+#marte > img {
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+}
+
+
+#jupiter {
+    width: 18.2rem;
+    height: 18.2rem;
+    animation: spin 80s infinite linear;
+}
+
+#jupiter > img {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 45%;
+    left: -23px;
+}
+
+#saturno {
+    width: 23.5rem;
+    height: 23.5rem;
+    animation: spin 115s infinite linear;
+}
+
+#saturno > img {
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 47%;
+    left: -20px;
+}
+
+#urano {
+    width: 28rem;
+    height: 28rem;
+    animation: spin 250s infinite linear;
+}
+
+#urano > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+}
+
+#netuno {
+    width: 32rem;
+    height: 32rem;
+    animation: spin 300s infinite linear;
+}
+
+#netuno > img {
+    width: 1.45rem;
+    height: 1.45rem;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+}
+
+@keyframes spin {
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
