@@ -17,7 +17,7 @@
     justify-content: center;
 }
 
-.planeta{
+.planeta {
     border: 1.5px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     position: absolute;
@@ -29,7 +29,7 @@
     position: absolute;
 }
 
-#sol > img {
+#sol>img {
     width: inherit;
     height: inherit;
 }
@@ -40,13 +40,13 @@
     animation: spin 3s infinite linear;
 }
 
-#mercurio > img {
+#mercurio>img {
     width: 0.7rem;
     height: 0.7rem;
     position: absolute;
     top: 50%;
     left: -7px;
-    
+
 }
 
 #venus {
@@ -55,7 +55,7 @@
     animation: spin 6s infinite linear;
 }
 
-#venus > img {
+#venus>img {
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -70,7 +70,7 @@
     animation: spin 8s infinite linear;
 }
 
-#terra > img {
+#terra>img {
     width: 1.1rem;
     height: 1.1rem;
     position: absolute;
@@ -84,7 +84,7 @@
     animation: spin 11s infinite linear;
 }
 
-#marte > img {
+#marte>img {
     width: .8rem;
     height: .8rem;
     position: absolute;
@@ -99,7 +99,7 @@
     animation: spin 80s infinite linear;
 }
 
-#jupiter > img {
+#jupiter>img {
     width: 3rem;
     height: 3rem;
     position: absolute;
@@ -113,7 +113,7 @@
     animation: spin 115s infinite linear;
 }
 
-#saturno > img {
+#saturno>img {
     width: 2.8rem;
     height: 2.8rem;
     position: absolute;
@@ -127,7 +127,7 @@
     animation: spin 250s infinite linear;
 }
 
-#urano > img {
+#urano>img {
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
@@ -141,7 +141,7 @@
     animation: spin 300s infinite linear;
 }
 
-#netuno > img {
+#netuno>img {
     width: 1.45rem;
     height: 1.45rem;
     position: absolute;
@@ -150,6 +150,26 @@
 }
 
 @keyframes spin {
-    0%{ transform: rotate(0deg); }
-    100%{ transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.planeta > img {
+    animation: rotate 35s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

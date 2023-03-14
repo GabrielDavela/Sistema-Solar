@@ -1,0 +1,6 @@
+.container__about__planet {
+    width: 100%;
+    height: 100vh;
+    background: rgb(20, 37, 52);
+    background: linear-gradient(199deg, rgba(20, 37, 52, 1) 0%, rgba(43, 29, 73, 1) 100%);
+}
